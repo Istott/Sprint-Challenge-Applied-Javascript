@@ -26,15 +26,15 @@ function articleCards(info) {
           eImage = document.createElement('div'),
           eImgsrc = document.createElement('img'),
           eName = document.createElement('span');
-     
-    eHeadline.textContent = info.headline;
-    eImgsrc.src = info.authorPhoto;
-    eName.textContent = info.authorName;
     
     newCard.classList.add('card');
     eHeadline.classList.add('headline');
     eAuthor.classList.add('author');
     eImage.classList.add('img-container');
+
+    eHeadline.textContent = info.headline;
+    eImgsrc.src = info.authorPhoto;
+    eName.textContent = info.authorName;
     
     newCard.append(eHeadline);
     newCard.append(eAuthor);

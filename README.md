@@ -42,7 +42,7 @@ addEventListeners are great cuz they make it so you can do powerful things like 
 because you cant actually manipulate info in a nodelist. so you turn it into array so you can utilize it.
 
 5. What is a component?
-is a small potentially reusable set of logic, behaviors and interface elements. the make it so you can set up a template to feed data into. saves alot of work and makes it scalable. 
+is a small potentially reusable set of logic, behaviors and interface elements. A component is like a template to feed data into. saves alot of work and makes it scalable. 
 
 ### Git Set up
 

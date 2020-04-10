@@ -17,15 +17,12 @@
     <div class="right-button"> > </div>
   </div>
 */
-// let i = 0;
-// let images = [];
-// let time = 3000;
-console.log('I like stuff');
 
 import computer from '../../assets/carousel/computer.jpeg'
 import mountains from '../../assets/carousel/mountains.jpeg';
 import trees from '../../assets/carousel/trees.jpeg';
 import turntable from '../../assets/carousel/turntable.jpeg';
+
 
 
 imagesArray = [ mountains, computer, trees, turntable ]
@@ -75,8 +72,8 @@ const slideshowPictures = imagesArray.map( obj => {
   return makeCarousel(obj)
 })
 
-slideshowPictures.forEach(cardElement => {
-  funCarousel.appendChild(cardElement)
+slideshowPictures.forEach(imgElement => {
+  funCarousel.appendChild(imgElement)
 })
 
-console.log('I like stuff');
+console.log(funCarousel);

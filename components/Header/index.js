@@ -14,14 +14,14 @@ function Header(info) {
           eDate = document.createElement('span'),
           eH1 = document.createElement('h1'),
           eTemp = document.createElement('span');
-        
-    eDate.textContent = 'February 14, 2020';
-    eH1.textContent = 'Lambda Times';
-    eTemp.textContent = '98\u00B0';
     
     newHeader.classList.add('header');
     eDate.classList.add('date');
     eTemp.classList.add('temp');
+
+    eDate.textContent = 'March 28, 2019';
+    eH1.textContent = 'Lambda Times';
+    eTemp.textContent = '98\u00B0';
     
     newHeader.append(eDate);
     newHeader.append(eH1);
