@@ -17,6 +17,19 @@
     <div class="right-button"> > </div>
   </div>
 */
+// let i = 0;
+// let images = [];
+// let time = 3000;
+console.log('I like stuff');
+
+import computer from '../../assets/carousel/computer.jpeg'
+import mountains from '../../assets/carousel/mountains.jpeg';
+import trees from '../../assets/carousel/trees.jpeg';
+import turntable from '../../assets/carousel/turntable.jpeg';
+
+
+imagesArray = [ mountains, computer, trees, turntable ]
+
 
 function makeCarousel(img) {
   const newCarousel = document.createElement('div'),
@@ -31,12 +44,12 @@ function makeCarousel(img) {
   leftBtn.classList.add('left-button');
   rightBtn.classList.add('right-button');
 
-  imgOne.src = img.mountains;
+  imgOne.src = im.mountains;
   imgTwo.src = img.computer;
   imgThree.src = img.trees;
   imgFour.src = img.turntable;
-  leftBtn.textContent = '\2190';
-  rightBtn.textContent = '\2192';
+  leftBtn.textContent = 'left';
+  rightBtn.textContent = 'right';
 
   newCarousel.appendChild(LeftBtn);
   newCarousel.appendChild(imgOne);
@@ -45,5 +58,25 @@ function makeCarousel(img) {
   newCarousel.appendChild(imgFour);
   newCarousel.appendChild(rightBtn);
 
+  // leftBtn.addEventListener('click', event => {
+  //   panelOpenButton.classList.toggle('hide-btn')
+  //   panelCloseButton.classList.toggle('hide-btn')
+  //   panelContent.classList.toggle('toggle-on')
+//  })
+
+  return newCarousel;
 
 }  
+
+const funCarousel = document.querySelector('.carousel-container')
+
+
+const slideshowPictures = imagesArray.map( obj => {
+  return makeCarousel(obj)
+})
+
+slideshowPictures.forEach(cardElement => {
+  funCarousel.appendChild(cardElement)
+})
+
+console.log('I like stuff');
