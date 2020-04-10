@@ -58,14 +58,3 @@ function articleCards(info) {
         entryPoint.appendChild(articleCards(item))
     });
  }});
-  
-//   javascript.forEach(item => {
-//     axios.get(item)
-//     .then(response => {
-//       console.log(response.data)
-//       entryPoint.append(articleCards(response.data));
-//     })
-//     .catch(error => {
-//       console.log("the data was not returned", error)
-//     });
-//   });
