@@ -32,7 +32,7 @@ Edit this document to include your answers after each question. Make sure to lea
 dom stands for document object model and is an api.
 
 2. What is an event?
-events in the DOM allow javascript to do different event handlers on elements in an html document. addEventListeners are great cuz they make it so you can do powerful things like the click or mouseover events and they are usually used with a function. 
+events in the DOM allow javascript to do different event handlers on elements in an html document.
 
 3. What is an event listener?
 are methods attach to an event handler to a specified element.
